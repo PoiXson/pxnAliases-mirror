@@ -1,16 +1,18 @@
-Name    : pxn-aliases
-Summary : Helpful aliases for common shell commands.
-Version : 2.2.%{?build_number}%{!?build_number:x}
-Release : 1
+Name      : pxn-aliases
+Summary   : Helpful aliases for common shell commands.
+Version   : 2.2.%{?build_number}%{!?build_number:x}
+Release   : 1
 BuildArch : noarch
 Packager  : PoiXson <support@poixson.com>
 License   : AGPLv3
 URL       : https://poixson.com/
 
-Provides : pxnaliases
+Provides  : pxnaliases
 
 Prefix: %{_bindir}/pxn/scripts
 %define _rpmfilename  %%{NAME}-%%{VERSION}-%%{RELEASE}.%%{ARCH}.rpm
+%global source_date_epoch_from_changelog 0
+%define source_date_epoch 0
 
 %description
 Helpful aliases for common shell commands.
