@@ -195,6 +195,9 @@ alias calce='clear ; calc ; exit'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 
+alias neofetch='c;neofetch'
+
+
 # ffmpeg
 alias ffmpeg_extract_audio='\ffmpeg -i "$1" -vn -ar 44100 -ac 2 -ab 192k -f mp3 "$1".mp3'
 alias ffmpeg_replace_audio='\ffmpeg -i "$1" -i "$1".wav -c:v copy -map 0:v:0 -map 1:a:0 "$1"-new.mp4'
