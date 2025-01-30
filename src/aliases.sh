@@ -284,3 +284,12 @@ fi
 if [[ -e /usr/bin/youtube-dl ]]; then
 	alias youtube-dl-mp4='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 fi
+
+
+
+# docker
+alias dockls='clear ; docker ls'
+alias dockps='clear ; docker ps'
+alias dockbuild='clear ; docker build --tag'
+alias dockerwipe='docker rmi $(docker images --all --quiet)'
+alias dockerprune='docker system prune --all
