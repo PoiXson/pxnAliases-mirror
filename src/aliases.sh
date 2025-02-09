@@ -226,6 +226,9 @@ alias countlines='\find . -name "*.java" | xargs wc -l'
 if [ -e /usr/bin/mvn ]; then
 	alias mvnv='mvn versions:display-dependency-updates'
 fi
+if [ -e /usr/bin/gradle ]; then
+	alias g='clear;gradle --daemon'
+fi
 if [ -e /usr/bin/gem ]; then
 	alias gem='gem -V'
 fi
@@ -237,12 +240,6 @@ if [ -e /usr/bin/git ]; then
 	alias gge='gg && exit $?'
 	alias gits='clear;git status'
 	alias gitm='git mergetool'
-fi
-
-
-# gradle aliases
-if [ -e /usr/bin/gradle ]; then
-	alias g='clear;gradle --daemon'
 fi
 
 
