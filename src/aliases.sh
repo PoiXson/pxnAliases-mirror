@@ -243,7 +243,6 @@ fi
 # gradle aliases
 if [ -e /usr/bin/gradle ]; then
 	alias g='clear;gradle --daemon'
-	alias ge='clear;gradle --daemon cleanEclipse eclipse'
 fi
 
 
